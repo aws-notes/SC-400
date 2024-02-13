@@ -45,3 +45,7 @@ Types of classifiers
 * Once you have reviewed enough items and accuracy reaches at least 70%, you can publish the trainable classifier
 **3 Publish:** Make the trainable classifier available for use in your compliance solutions.
 * The status for a published trainable classifier is Ready to use.
+
+  ### Review sensitive information and label usage
+https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-classify-data/review-sensitive-information
+
