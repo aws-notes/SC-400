@@ -34,7 +34,14 @@ Every sensitive information type consists of:
 Types of classifiers
 * **Pre-Trained Classifiers:** Microsoft provides pretrained classifiers that are ready to use without training. These classifiers appear with the status of Ready to use.
 * **Custom Trainable Classifiers:** If the pretrained classifiers don't cover your needs, you can create and train your own.
-  
-  * **Seed:** Prepare your sample data and create the trainable classifier.
-  * **Test:** Prepare test data, test the predictive model, and evaluate the results.
-  * **Publish:** Make the trainable classifier available for use in your compliance solutions.
+**1 Seed:** Prepare your sample data and create the trainable classifier.
+* Prepare sample data - You need at least 50 and as many as 500 samples
+* Create trainable classifier - Within 24 hours, the trainable classifier processes the seed data and builds a prediction model.(in progress white processing)
+**2 Test:** Prepare test data, test the predictive model, and evaluate the results.
+* Prepare test data - least 200 items, with a maximum limit of 10,000. manually review the results
+* Test predictive model: - Add data, can take up to a hour. done when "Ready to review" is available
+* Evaluate predictions - Review items to improve the classifier accuracy step's status is Ready to review when it's ready for you to conduct the evaluation.
+* Not available - "Not available" because not enough test content has been evaluated yet.
+* Once you have reviewed enough items and accuracy reaches at least 70%, you can publish the trainable classifier
+**3 Publish:** Make the trainable classifier available for use in your compliance solutions.
+* The status for a published trainable classifier is Ready to use.
