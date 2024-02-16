@@ -10,6 +10,7 @@ The special features of custom sensitive information types include:
 * Exact Data Match (EDM)-based classification
 * Document Fingerprinting
 * Keyword dictionaries
+  
 | Feature    | What is it?	 |When to use it?	|Recommendation|
 | -------- | ------- |------- |------- |
 | Exact Data Match (EDM)-based classification	  | creates DB with custom sensitive information types for exact values, enables daily refreshes, contain up to 100 million rows of data.|large quantities of sensitive information need to be matched daily| large amounts of personal information
