@@ -20,3 +20,26 @@ The special features of custom sensitive information types include:
 1. Start with the built-in sensitive information types for general protection against data loss of most common sensitive data.
 2. Then organizations should analyze their individual needs to protect specific data by creating custom sensitive information types.
 3. Then use the advanced features of custom sensitive information types, to increase accuracy and simplify management.
+
+## sensitive information types and what they're composed of
+* **Regular expressions:** Patterns that match text. Microsoft 365 SITs use the Boost.RegEx 5.1.3 engine.
+* **Keyword lists:** Pre-made or custom lists used in defining SITs.
+* **Keyword dictionaries:** Collections of terms for SITs.
+* **SIT functions:** Features that enhance SIT identification.
+* **Confidence levels:** Indicators that assess the probability that identified information is sensitive based on the presence of supporting details. More supporting evidence increases the confidence level.
+* **SIT limits:** Restrictions on SIT configurations.
+
+### Create and manage custom sensitive information types
+There are two ways to create a new sensitive information type:
+* from scratch where you fully define all elements
+* copy and modify an existing sensitive information type
+
+| Feature    | What is it?	 |
+| -------- | ------- |
+|Maximum number of custom SITs created through the Microsoft Purview compliance portal|	500|
+Maximum length of regular expression |	1024 characters|
+Maximum length for a given term in a keyword list |	50 characters
+Maximum number of terms in keyword list	| 2048
+Maximum number of distinct regexes per SIT	| 20
+Maximum size of a keyword dictionary (post compression)	| 1MB (~1,000,000 characters)
+Maximum number of keyword dictionary based SITs in a tenant	| 50
