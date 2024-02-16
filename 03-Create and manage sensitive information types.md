@@ -21,7 +21,7 @@ The special features of custom sensitive information types include:
 2. Then organizations should analyze their individual needs to protect specific data by creating custom sensitive information types.
 3. Then use the advanced features of custom sensitive information types, to increase accuracy and simplify management.
 
-## sensitive information types and what they're composed of
+### sensitive information types and what they're composed of
 * **Regular expressions:** Patterns that match text. Microsoft 365 SITs use the Boost.RegEx 5.1.3 engine.
 * **Keyword lists:** Pre-made or custom lists used in defining SITs.
 * **Keyword dictionaries:** Collections of terms for SITs.
@@ -29,7 +29,7 @@ The special features of custom sensitive information types include:
 * **Confidence levels:** Indicators that assess the probability that identified information is sensitive based on the presence of supporting details. More supporting evidence increases the confidence level.
 * **SIT limits:** Restrictions on SIT configurations.
 
-### Create and manage custom sensitive information types
+## Create and manage custom sensitive information types
 There are two ways to create a new sensitive information type:
 * from scratch where you fully define all elements
 * copy and modify an existing sensitive information type
@@ -43,3 +43,67 @@ Maximum number of terms in keyword list	| 2048
 Maximum number of distinct regexes per SIT	| 20
 Maximum size of a keyword dictionary (post compression)	| 1MB (~1,000,000 characters)
 Maximum number of keyword dictionary based SITs in a tenant	| 50
+
+### Fundamental parts of a sensitive information type
+* **Name:** A descriptive name that identifies the sensitive information type.
+* **Description**
+* **Pattern:** specific characteristics or criteria that indicate the presence of sensitive information.
+  * **Primary element** – regular expression, checksum validation, a keyword list, a keyword dictionary, or a function.
+  * **Supporting element** – an element that acts as supporting evidence that help in increasing the confidence of the match. Regular expression with or without a checksum validation, keyword list, keyword dictionary.
+  * **Confidence Level** - confidence levels (high, medium, low) reflect how much supporting evidence is detected along with the primary element.
+  * **Proximity** – the number of characters between the primary and supporting elements.
+ 
+### Create a custom sensitive information type
+* **Identify your data:** Understand what unique data needs protection.
+* **Access the Microsoft Purview compliance portal:** Use the Microsoft Purview compliance portal to create SITs.
+* **Define your SIT:** Choose to start from scratch or modify an existing SIT. Include patterns like regular expressions and keyword lists that match your data.
+* **Test your SIT:** Run simulations to ensure your SIT accurately identifies the intended data.
+* **Deploy and monitor:** Implement your SIT in data loss prevention policies and monitor its efficacy.
+
+## Describe custom sensitive information types with exact data match
+Fingerprinting - Exact data match (EDM) allows you to create a sensitive information type (SIT) that uses exact data values for identifying and protecting sensitive information. With EDM, you can ensure your SIT
+* **Is easily** updated: Quickly adapt to changes in your sensitive data.
+* **Reduces false positives:** Accurately identify the correct information, minimizing mistakes.
+* **Fits structured data:** Works well with organized data sets.
+* **Ensures privacy:** Keeps sensitive data secure and private, even from Microsoft.
+* **Integrates across services:** Functions with a range of Microsoft cloud services for better data governance.
+
+create custom sensitive types that match exact values from a database, which can hold up to 100 million rows of data.
+refreshed daily 
+can have DLP policy for Microsoft Purview Data Loss Prevention policies or Microsoft Cloud App Security file policies.
+
+### What's different in an EDM SIT
+**Schema**
+* The name of the schema, later referred to as the DataStore.
+* The field names that your sensitive information source table contains. Each schema field corresponds directly to a column in your table.
+* Which fields are searchable.
+* A configurable match, which is an adjustable parameter for refining your search, like ignoring case sensitivity or punctuation in the data you're searching for.
+
+**Sensitive information source table**
+The sensitive information source table contains the values that the EDM SIT looks for. It contains:
+* Column headers represent the field names.
+* Rows correspond to individual records.
+* Each cell holds the specific value for its record and field.
+
+**Rule package**
+Every SIT has a rule package. You use the rule package in an EDM SIT to define:
+* **Matches** specify the field used as the primary element for exact lookups. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
+* **Classification** determines the specific sensitive information type match criteria that triggers a search using EDM.
+* **Supporting elements** are extra pieces of data that, when found near the primary data, can be a regular expression with or without a checksum validation, keyword list, or a keyword dictionary
+* **Confidence** high to low, based on the amount of supporting evidence found with the primary element.
+* **Proximity** refers to the distance, in characters, between the primary and supporting elements.
+
+**You supply your own schema and data**
+ You encrypt them via a hash function that includes a randomly generated or self-supplied salt value. Only the hashed values are uploaded to the service, so your sensitive data is never in the open.
+
+**Primary and secondary support elements - EDM SITs**
+* **Primary** - specific information you're looking to identify - email, name, DOB
+* **secondary** - Secondary elements reinforce the identification of the primary element as sensitive. keywords, keyword lists
+
+**How matching works**
+comparison is done by comparing one-way cryptographic hashes against the sensitive information source table
+
+Create an EDM-based SIT
+* **Simplified workflow:** The creation of schemas and SITs is now a unified process, reducing steps and providing clear directions for mapping data elements to the system’s predefined SITs. This integrated approach also automatically sets the appropriate confidence levels for the detection rules, making the setup faster and more user-friendly.
+* **Automated schema and SIT creation:** By uploading a non-sensitive sample data file, the system can auto-generate a schema, then suggest the best SITs to link with your primary data fields. This automation eliminates the need to manually input schema details and helps ensure that the SITs are correctly matched, leading to more accurate data protection.
+* **Additional guardrails to ensure better performance:** The new system alerts you when a primary field is connected to a SIT that's too broad. This measure helps avoid potentially irrelevant matches that could slow down the process. These proactive notifications are designed to help maintain optimal system performance by steering you away from configurations that might lead to inefficiencies or errors in data matching.
