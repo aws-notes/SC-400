@@ -18,7 +18,7 @@ The special features of custom sensitive information types include:
 
 | Feature        | What is it?           | When to use it?	  |Recommendation  |
 | ------------- |:-------------:| -----:| -----:|
-| col 3 is      | right-aligned | $1600 | $1600 |
+| Exact Data Match (EDM)-based classification     |  creates DB with custom sensitive information types for exact values, enables daily refreshes, contain up to 100 million rows of data. | large quantities of sensitive information need to be matched daily | large amounts of personal information |
 | col 2 is      | centered      |   $12 | $1600 |
 | zebra stripes | are neat      |    $1 | $1600 |
 
