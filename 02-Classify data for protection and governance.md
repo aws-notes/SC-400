@@ -46,6 +46,5 @@ Types of classifiers
 **3 Publish:** Make the trainable classifier available for use in your compliance solutions.
 * The status for a published trainable classifier is Ready to use.
 
-  ### Review sensitive information and label usage
-https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-classify-data/review-sensitive-information
+
 
