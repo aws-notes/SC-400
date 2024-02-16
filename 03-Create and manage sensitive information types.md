@@ -16,11 +16,11 @@ The special features of custom sensitive information types include:
 | Document Fingerprinting	 | Converts a standard form into a sensitive information type. |A document fingerprint can be created on a blank document template|block any outbound mail or shared documents matching that fingerprint are detected|
 | Keyword dictionaries	    | Keyword dictionaries offer an easy way to manage reused keyword lists for matching company information on a large scale. They support up to 1 MB of keywords in any language.  |  help identify generic content like healthcare-related communication (ICD classification) or inappropriate language.|Keyword dictionaries are less accurate than EDM-based classification. Useful for detecting industry-specific terms before sharing with internal or external parties and enforcing company guidelines.|
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Feature        | What is it?           | When to use it?	  |Recommendation  |
+| ------------- |:-------------:| -----:| -----:|
+| col 3 is      | right-aligned | $1600 | $1600 |
+| col 2 is      | centered      |   $12 | $1600 |
+| zebra stripes | are neat      |    $1 | $1600 |
 
 1. Start with the built-in sensitive information types for general protection against data loss of most common sensitive data.
 2. Then organizations should analyze their individual needs to protect specific data by creating custom sensitive information types.
