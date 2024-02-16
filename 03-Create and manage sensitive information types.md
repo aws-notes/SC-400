@@ -107,3 +107,19 @@ Create an EDM-based SIT
 * **Simplified workflow:** The creation of schemas and SITs is now a unified process, reducing steps and providing clear directions for mapping data elements to the system’s predefined SITs. This integrated approach also automatically sets the appropriate confidence levels for the detection rules, making the setup faster and more user-friendly.
 * **Automated schema and SIT creation:** By uploading a non-sensitive sample data file, the system can auto-generate a schema, then suggest the best SITs to link with your primary data fields. This automation eliminates the need to manually input schema details and helps ensure that the SITs are correctly matched, leading to more accurate data protection.
 * **Additional guardrails to ensure better performance:** The new system alerts you when a primary field is connected to a SIT that's too broad. This measure helps avoid potentially irrelevant matches that could slow down the process. These proactive notifications are designed to help maintain optimal system performance by steering you away from configurations that might lead to inefficiencies or errors in data matching.
+
+ ![image](https://github.com/aws-notes/SC-400/assets/78312587/77e48d20-a0b9-43fe-9a5e-af39d54d4428)
+
+### The classic EDM experience
+
+* **Multiple SITs per schema:** The classic experience allows for multiple SITs to be mapped to a single schema, which isn't possible in the new experience.
+* **Managing more than 10 SITs:** If you need to create or manage more than 10 SITs, you need to use the classic experience. Because you can map multiple EDM SITs to the same schema, you can have more than 10 EDM SITs. * Attempting to create an eleventh schema with the new experience generates an error.
+* **Custom schema names:** The classic experience lets you specify custom names for your EDM schemas, unlike the new experience that auto-generates schema names.
+* **Editing existing schemas:** If you need to edit schemas created in the classic experience or uploaded via PowerShell, you must use the classic experience, as the new experience doesn't support this functionality.
+
+![image](https://github.com/aws-notes/SC-400/assets/78312587/bf77d071-7175-473e-bdf6-b33a2f31bb8e)
+
+![image](https://github.com/aws-notes/SC-400/assets/78312587/e24de564-61ae-4202-9f3d-cf039830f2ad)
+
+
+
