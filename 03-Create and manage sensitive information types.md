@@ -72,20 +72,20 @@ create custom sensitive types that match exact values from a database, which can
 refreshed daily 
 can have DLP policy for Microsoft Purview Data Loss Prevention policies or Microsoft Cloud App Security file policies.
 
-### What's different in an EDM SIT
-**Schema**
+## What's different in an EDM SIT
+### **Schema**
 * The name of the schema, later referred to as the DataStore.
 * The field names that your sensitive information source table contains. Each schema field corresponds directly to a column in your table.
 * Which fields are searchable.
 * A configurable match, which is an adjustable parameter for refining your search, like ignoring case sensitivity or punctuation in the data you're searching for.
 
-**Sensitive information source table**
+### **Sensitive information source table**
 The sensitive information source table contains the values that the EDM SIT looks for. It contains:
 * Column headers represent the field names.
 * Rows correspond to individual records.
 * Each cell holds the specific value for its record and field.
 
-**Rule package**
+### **Rule package**
 Every SIT has a rule package. You use the rule package in an EDM SIT to define:
 * **Matches** specify the field used as the primary element for exact lookups. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
 * **Classification** determines the specific sensitive information type match criteria that triggers a search using EDM.
@@ -93,17 +93,17 @@ Every SIT has a rule package. You use the rule package in an EDM SIT to define:
 * **Confidence** high to low, based on the amount of supporting evidence found with the primary element.
 * **Proximity** refers to the distance, in characters, between the primary and supporting elements.
 
-**You supply your own schema and data**
+### **You supply your own schema and data**
  You encrypt them via a hash function that includes a randomly generated or self-supplied salt value. Only the hashed values are uploaded to the service, so your sensitive data is never in the open.
 
-**Primary and secondary support elements - EDM SITs**
+### **Primary and secondary support elements - EDM SITs**
 * **Primary** - specific information you're looking to identify - email, name, DOB
 * **secondary** - Secondary elements reinforce the identification of the primary element as sensitive. keywords, keyword lists
 
-**How matching works**
+### **How matching works**
 comparison is done by comparing one-way cryptographic hashes against the sensitive information source table
 
-Create an EDM-based SIT
+### Create an EDM-based SIT
 * **Simplified workflow:** The creation of schemas and SITs is now a unified process, reducing steps and providing clear directions for mapping data elements to the system’s predefined SITs. This integrated approach also automatically sets the appropriate confidence levels for the detection rules, making the setup faster and more user-friendly.
 * **Automated schema and SIT creation:** By uploading a non-sensitive sample data file, the system can auto-generate a schema, then suggest the best SITs to link with your primary data fields. This automation eliminates the need to manually input schema details and helps ensure that the SITs are correctly matched, leading to more accurate data protection.
 * **Additional guardrails to ensure better performance:** The new system alerts you when a primary field is connected to a SIT that's too broad. This measure helps avoid potentially irrelevant matches that could slow down the process. These proactive notifications are designed to help maintain optimal system performance by steering you away from configurations that might lead to inefficiencies or errors in data matching.
