@@ -121,5 +121,6 @@ comparison is done by comparing one-way cryptographic hashes against the sensiti
 
 ![image](https://github.com/aws-notes/SC-400/assets/78312587/e24de564-61ae-4202-9f3d-cf039830f2ad)
 
+https://learn.microsoft.com/en-us/training/modules/create-manage-sensitive-information-types/5-implement-document-fingerprint
 
 
