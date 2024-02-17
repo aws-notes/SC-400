@@ -126,6 +126,7 @@ comparison is done by comparing one-way cryptographic hashes against the sensiti
 ### How document fingerprinting works
 document fingerprint is used to detect outbound documents with the same pattern. uploading a form or template creates the most effective type of document fingerprint.
 Document fingerprint is a small Unicode XML file containing a unique hash value that represents the original text. he original document can't be reconstructed from the hash value
+
 ![image](https://github.com/aws-notes/SC-400/assets/78312587/d1475be6-5e1b-4081-8504-f24602169c1a)
 
 ### Supported file types
