@@ -121,6 +121,70 @@ comparison is done by comparing one-way cryptographic hashes against the sensiti
 
 ![image](https://github.com/aws-notes/SC-400/assets/78312587/e24de564-61ae-4202-9f3d-cf039830f2ad)
 
-https://learn.microsoft.com/en-us/training/modules/create-manage-sensitive-information-types/5-implement-document-fingerprint
+## Implement document fingerprinting
+
+### How document fingerprinting works
+document fingerprint is used to detect outbound documents with the same pattern. uploading a form or template creates the most effective type of document fingerprint.
+Document fingerprint is a small Unicode XML file containing a unique hash value that represents the original text. he original document can't be reconstructed from the hash value
+![image](https://github.com/aws-notes/SC-400/assets/78312587/d1475be6-5e1b-4081-8504-f24602169c1a)
+
+### Supported file types
+mail flow rules and document fingerprinting don't support the **.dotx** file type.
+
+### Limitations of document fingerprinting
+* Password protected files
+* Files that contain images only
+* Documents that don't contain all the text from the original form used to create the document fingerprint
+* Files larger than 4 MB
+
+### Partial matching
+file must match the fingerprint in terms of a percentage between 30% - 90%.
+* **low confidence:** Matched items have the fewest false negatives but contain more false positives than other levels. Low confidence returns all low, medium, and high confidence matches.
+* **medium confidence:** Matched items contain an average number of false positives and false negatives. Medium confidence returns all medium, and high confidence matches.
+* **high confidence:** Matched items have the fewest false positives but contain more false negatives than other levels.
+
+### Exact matching
+* set the high confidence level to Exact
+* if you choose Exact, the system only flags documents that match the fingerprint word-for-word.
+
+### Create a fingerprint based SIT in the compliance portal
+* On the Classifiers page, choose Sensitive info types > Create Fingerprint based SIT.
+* To use document fingerprinting with devices, **Advanced classification scanning and protection** must be turned on.
+* Fingerprints are stored in a separate rule pack. This rule pack has a maximum size limit of 150 KB. Given this limit, you can create about 50 fingerprints per tenant.
+
+### Describe named entities
+Named entities are specific types of sensitive information types (SIT) that you can use to detect person names, physical addresses, and medical terms and conditions
+* Microsoft Purview compliance portal > Data classification > Sensitive info types.
+* examples of use cases for named entity SITs:
+  * Prevent data leakage - ecurity numbers or credit card numbers
+  * Comply with regulations -  HIPAA regulations.
+* Named entity SITs come in two types:
+  * **Unbundled** - named entity SITs have a narrower focus, such as a single region, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope.
+  * **Bundled** - bundled named entity SITs detect all possible matches in a class, such as All physical addresses.
+* To use bundled SITs, you must activate Advanced classification scanning and protection
+
+### Examples of named entity SITs
+![image](https://github.com/aws-notes/SC-400/assets/78312587/584b6d2f-21db-46cc-8e15-f8743b53673c)
+
+### Examples of enhanced DLP policies
+**enhanced policy templates** - pre-configured DLP policies 
+10 enhanced DLP policies in the Microsoft Purview compliance portal. Enhanced templates can be used in DLP and auto-labeling.
+![image](https://github.com/aws-notes/SC-400/assets/78312587/e13ece74-891e-4221-9341-ac9470ddb320)
+
+## Create keyword dictionary
+Keyword dictionaries are an efficient way to manage large lists of words that are regularly subject to change. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms after compression in the dictionary and support of any language.
+Configuration of keyword dictionaries is via the Security & Compliance **PowerShell module.**
+You can create up to 50 sensitive information types per tenant 
+
+### Keyword dictionary creation best practices
+Keyword dictionary as a custom sensitive information type
+* Collect typical words from some departments, using Microsoft Forms
+* Collaborate with some employees, for example, from HR or legal to create a list of typical words.
+* Create an employee audit and create the list out of the outcome.
+* Remember that you can edit the list, so you can improve your results by revising them regularly
+
+
+
+
 
 
