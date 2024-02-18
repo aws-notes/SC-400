@@ -31,6 +31,8 @@ Customers have two options for service level encryption key management:
 
 ![image](https://github.com/aws-notes/SC-400/assets/78312587/70b143e9-ba29-475b-8843-45fa5a8ab4fa)
 
-The left side of diagram above outlines the key hierarchy for Exchange Online, which shows how two Microsoft Managed RSA keys and one equivalent AES-256 availability key are used to protect the Data Encryption Policy Key, which in turn protects the Mailbox Key used to encrypt mailboxes in Exchange Online. | The right side of the diagram shows the key hierarchy for SharePoint Online, OneDrive for Business, and Microsoft Teams files, which use SQL Transparent Data Encryption to protect File Chunk Encryption Keys for SQL Databases.
+|Exchange Online|SharePoint Online|
+|-------|---------|
+|The left side of diagram above outlines the key hierarchy for Exchange Online, which shows how two Microsoft Managed RSA keys and one equivalent AES-256 availability key are used to protect the Data Encryption Policy Key, which in turn protects the Mailbox Key used to encrypt mailboxes in Exchange Online. | The right side of the diagram shows the key hierarchy for SharePoint Online, OneDrive for Business, and Microsoft Teams files, which use SQL Transparent Data Encryption to protect File Chunk Encryption Keys for SQL Databases.|
 
 
