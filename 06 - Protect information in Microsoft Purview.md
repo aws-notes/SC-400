@@ -44,10 +44,11 @@ Encryption uses the Azure Rights Management Service (Azure RMS) from Azure Infor
 
 <img width="517" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/44305139-c9ba-410a-8d52-40845215b4f6">
 
-
-
-
-
+  * **Let users assign permissions** - Actions vary based on if the label is applied in Outlook or if it's applied in Word, PowerPoint, and Excel. Selecting this option results in additional configuration choices presented in the next list. You must choose at least one option.
+   * **Outlook** The restrictions enforced are equivalent to the Don't Forward option.
+   * **Word, PowerPoint, Excel.** The user is prompted to specify permissions.
+   * 
+<img width="367" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/504afad1-784a-4729-9e51-714a91f3d134">
 
 
 ------
