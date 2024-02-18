@@ -8,6 +8,12 @@
 Administrators Must review their tenant settings for information rights management (IRM) features and OME settings before activating the encryption system for all users.
 
 ### Verify information rights management functionality
-Validate IRM configuration
+Validate configuration of information rights management - IRM
 
-*Get-IRMConfiguration | fl AzureRMSLicensingEnabled*
+  "*Get-IRMConfiguration | fl AzureRMSLicensingEnabled*"
+
+Validate configuration of O365 Messege Enctption - OME
+
+  "*Set-IRMConfiguration -AzureRMSLicensingEnabled:$True*"
+
+
