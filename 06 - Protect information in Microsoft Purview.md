@@ -6,3 +6,7 @@ Learning objectives
 * Explain what users will experience when the solution is implemented.
 * Articulate deployment and adoption best practices.
 
+https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-protect-information/information-protection-overview
+
+
+
