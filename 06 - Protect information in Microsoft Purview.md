@@ -89,6 +89,10 @@ Service-side labeling - Content already saved (in SharePoint Online or OneDrive)
 * Step 4: Name and description
 * Step 5: Review your settings
 
+## Configure auto-labeling policies
+
+https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-protect-information/configure-auto-labeling-policies
+
 ------
 
 data stuertship
