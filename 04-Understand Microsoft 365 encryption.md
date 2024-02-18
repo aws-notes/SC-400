@@ -35,4 +35,21 @@ Customers have two options for service level encryption key management:
 |-------|---------|
 |The left side of diagram above outlines the key hierarchy for Exchange Online, which shows how two Microsoft Managed RSA keys and one equivalent AES-256 availability key are used to protect the Data Encryption Policy Key, which in turn protects the Mailbox Key used to encrypt mailboxes in Exchange Online. | The right side of the diagram shows the key hierarchy for SharePoint Online, OneDrive for Business, and Microsoft Teams files, which use SQL Transparent Data Encryption to protect File Chunk Encryption Keys for SQL Databases.|
 
+### Explore customer key management using Customer Key
+Customer Key allows customers to use their own root keys to encrypt their data. When using Customer Key, the customer's root keys use FIPS 140-2 compatible algorithms and don't leave the HSM boundary. 
+The benefits of using Customer Key include:
+* Providing rights protection and management features on top of strong encryption protection.
+* Enhancing the ability of Microsoft 365 to meet the demands of customers with compliance requirements regarding encryption.
+
+![image](https://github.com/aws-notes/SC-400/assets/78312587/3c7d3cf4-e55e-4916-ab6d-28a801c08628)
+
+### Availability key
+
+The primary purpose of the availability key is to provide recovery capability from the unanticipated loss of customer-managed root keys. Microsoft Support can initiate recovery at the customer's request using the availability key.
+
+
+
+
+
+
 
