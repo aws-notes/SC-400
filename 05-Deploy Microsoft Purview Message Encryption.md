@@ -5,4 +5,8 @@
 
 ## Implement Microsoft Purview Message Encryption
 
-https://learn.microsoft.com/en-us/training/modules/deploy-message-encryption-microsoft-365/2-implement-microsoft-purview-message-encryption
+Administrators Must review their tenant settings for information rights management (IRM) features and OME settings before activating the encryption system for all users.
+
+### Verify information rights management functionality
+Validate IRM configuration
+'Get-IRMConfiguration | fl AzureRMSLicensingEnabled'
