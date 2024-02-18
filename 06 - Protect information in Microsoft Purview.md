@@ -8,5 +8,10 @@ Learning objectives
 
 https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-protect-information/information-protection-overview
 
+data stuertship
+
+https://learn.microsoft.com/en-us/purview/concept-insights
+
+
 
 
