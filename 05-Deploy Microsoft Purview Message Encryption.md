@@ -9,4 +9,4 @@ Administrators Must review their tenant settings for information rights manageme
 
 ### Verify information rights management functionality
 Validate IRM configuration
-'Get-IRMConfiguration | fl AzureRMSLicensingEnabled'
+*Get-IRMConfiguration | fl AzureRMSLicensingEnabled*
