@@ -84,14 +84,14 @@ Service-side labeling - Content already saved (in SharePoint Online or OneDrive)
 * Review your settings
 
 * Step 1: Choose labels to publish
- * must be existing label
+  * must be existing label
 * Step 2: Publish to users and groups
- * Consider publishing the label to a test group with a few members first
+  * Consider publishing the label to a test group with a few members first
 * Step 3: Policy settings
- * Default label
- * Justification for removal
- * Require label
- * Custom help
+  * Default label
+  * Justification for removal
+  * Require label
+  * Custom help
 * Step 4: Name and description
 * Step 5: Review your settings
 
