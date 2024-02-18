@@ -30,13 +30,17 @@ Encryption uses the Azure Rights Management Service (Azure RMS) from Azure Infor
 * **None** - no encryption
 * **Remove** - remove encryption
 * **Apply**  
-  * **Assign permissions now** - Selecting this option means the encryption settings chosen are enforced when the label is applied to email and Office files. Selecting this option results in the additional configuration listed.
+  * **Assign permissions now** - Enforced when the label is applied to email and Office files. Selecting this option results in the additional configuration listed.
     
-    * **User access to content expires** - Options are never, on a specific date, and a number of days after the label is applied.
-    
-    * **Allow offline access** - Options are never, on a specific date, and only for a number of days.
-    
-    * **Assign permissions to specific users and groups** - Only the users or groups you choose are assigned permissions to use the content with this label applied. You can choose from existing permissions (such as Co-Owner, Co-Author, and Reviewer) or customize them to meet your needs. You must assign permissions to at least one user or group. 
+    * **User access to content expires** 
+       * Never
+       * On a specific date
+       * Number of days after the label is applied.
+    * **Allow offline access** -
+       * Never
+       * On a specific date
+       * number of days.
+    * **Assign permissions to specific users and groups** - You can choose from existing permissions (such as Co-Owner, Co-Author, and Reviewer) or customize them to meet your needs
 
 <img width="517" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/44305139-c9ba-410a-8d52-40845215b4f6">
 
