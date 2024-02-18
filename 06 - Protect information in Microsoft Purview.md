@@ -77,12 +77,6 @@ Service-side labeling - Content already saved (in SharePoint Online or OneDrive)
 ### Step 6: Review your settings
 
 ## Configure sensitivity label policies
-* Choose labels to publish
-* Publish to users and groups
-* Policy settings
-* Name and description
-* Review your settings
-
 * Step 1: Choose labels to publish
   * must be existing label
 * Step 2: Publish to users and groups
