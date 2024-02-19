@@ -37,7 +37,9 @@ Adding on-premises files to an information protection solution is important in a
 ### Requirements and best practices for the unified labeling scanner
 The Azure Information Protection unified labeling scanner scans and protects files in on-premises environments like NAS storages, file shares, and local SharePoint servers.
 <img width="476" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/088d12a4-bac5-45a4-8032-4d5fed0fed90">
+
 The table below lists locations where it's possible to scan with the Unified Labeling Scanner:
+
 <img width="875" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/3afaaa5c-1442-430c-a3bb-07c96ca31688">
 
 ### Requirements for the unified labeling scanner
