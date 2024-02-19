@@ -83,6 +83,33 @@ When a file is protected with a sensitivity label, the protection is sensitive a
 **IMPORTANT!** Encryption of a file and access restrictions are connected. Without encryption it´s not possible to restrict access.
 
 ## Monitor label performance using label analytics
+Applying a label to a file, an email, a SharePoint Site, or a Microsoft Team is a great option to control access and sharing options.
+
+### Pulling a report
+The Organizational data of this dashboard provides an overview of the DLP matches that occurred in SharePoint, OneDrive, Exchange Online, or Microsoft Teams.
+
+The reports in the Reports area are based on the organizational level information. For reports in detail and on a user level, please choose Microsoft Defender for Apps or the Data classification area with the Content explorer and the Activity explorer.
+
+### Planning log analytics
+To start log analytics, you must create a Log Analytics workspace
+
+### Roles required for log analytics
+* To create your Log Analytics workspace or to create custom queries, you need one of the following roles:
+  * Azure Information Protection administrator
+  * Security administrator
+  * Compliance administrator
+  * Compliance data administrator
+  * Global administrator
+* After the workspace has been created, you can then use the following roles with lower permissions to view the data collected:
+  * Security reader
+  * Global reader
+* To create the workspace or to create custom queries, you need one of the following:
+  * Log Analytics Contributor
+  * Contributor
+  * Owner
+* After the workspace has been created, you can then use one of the following roles with lower permissions to view the data collected:
+  * Log Analytics Reader
+  * Reader
 
 
 
