@@ -1,3 +1,7 @@
+
+https://learn.microsoft.com/en-us/training/browse/?products=microsoft-purview%2Cm365&subjects=information-protection-governance&levels=intermediate&roles=auditor%2Cip-admin%2Crisk-practitioner&terms=sc-400
+
+
 1. SC-400: Implement Information Protection in Microsoft 365
 2. Classify Data for Protection and Governance
 3. Create and Manage Sensitive Information Types
