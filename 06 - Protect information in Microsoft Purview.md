@@ -144,13 +144,6 @@ Prevent deployment of ineffective or bad policies and help minimize incident man
 
 Each summary card except for **Azure Information protection labels** summary links to either **Activity explorer** or **Content explore**
 
-https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-protect-information/configure-auto-labeling-policies
-
-------
-
-data stuertship
-
-https://learn.microsoft.com/en-us/purview/concept-insights
 
 
 
