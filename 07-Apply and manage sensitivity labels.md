@@ -69,6 +69,23 @@ After fulfilling the requirements like service accounts and a SQL Server instanc
 * Verify that the service is now installed by using Administrative Tools > Services. The installed service is named Azure Information Protection Scanner and is configured to run by using the scanner service account that you created.
 * You can control the installation and operation in the Task Manager of the Windows Server, which is the host for the scanner.
 
+### Operational scenarios for the unified labeling scanner
+
+<img width="889" alt="image" src="https://github.com/aws-notes/SC-400/assets/78312587/3c76ec82-6969-4cbf-8284-b1a21dd234d4">
+
+## Apply protections and restrictions to email and files
+
+When you label an email message that has attachments, the attachments don't inherit the label with one exception. When the label you apply to the email message applies encryption.
+
+### Applying protections to files
+When a file is protected with a sensitivity label, the protection is sensitive at the file level. Even if the file's storage location changes or is shared via email or other sharing tools; the file remains protected.
+
+**IMPORTANT!** Encryption of a file and access restrictions are connected. Without encryption it´s not possible to restrict access.
+
+## Monitor label performance using label analytics
+
+
+
 
 
 
