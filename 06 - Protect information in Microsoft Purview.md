@@ -133,7 +133,16 @@ Help you understand the impact of the policy and tune it for accuracy and scalab
 Provide insights on the estimated length of time required to deploy a policy at scale.
 Prevent deployment of ineffective or bad policies and help minimize incident management costs.
 
+## Manage, monitor, and remediate information protection
 
+### Overview page are most relevant to information protection
+* Top sensitive information types
+* Top sensitivity labels applied to content
+* Top activities detected
+* Locations where sensitivity labels are applied
+* Azure Information Protection labels summary
+
+Each summary card except for **Azure Information protection labels** summary links to either **Activity explorer** or **Content explore**
 
 https://learn.microsoft.com/en-us/training/modules/m365-compliance-information-protect-information/configure-auto-labeling-policies
 
