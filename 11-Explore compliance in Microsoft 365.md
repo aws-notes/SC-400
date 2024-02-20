@@ -56,4 +56,39 @@ Sensitive information types
 Retention labels and policies
 Trainable classifiers
 
+## Manage your compliance requirements with Compliance Manager
+Take inventory of its data protection risks.
+Manage the complexities of implementing controls.
+Stay current with regulations and certifications.
+Report to auditors.
+
+Compliance Manager helps simplify compliance and reduce risk by providing:
+
+Prebuilt assessments for standards and regulations.
+Workflow capabilities for risk assessments
+guidance on improvement actions.
+A risk-based compliance score 
+
+Compliance Manager dashboard maintains these features. The dashboard:
+
+Shows an organization its current compliance score.
+Helps it see what needs attention.
+Guides it to key improvement actions.
+
+### Key elements of Compliance Manager
+**Controls** - Compliance Manager tracks the following types of controls:
+* Microsoft managed controls. Controls for Microsoft cloud services, which Microsoft is responsible for implementing.
+* Your controls. Your organization implements and manages these controls. Also known as customer managed controls.
+* Shared controls. Both Microsoft and your organization manage these controls. They each share responsibility for their implementation.
+* 
+**Assessments** - An assessment is grouping of controls from a specific regulation, standard, or policy
+  * will give a assesment score
+
+ **Templates** - Compliance Manager provides templates to help organizations quickly create assessments
+
+ **Improvement actions** - recommended guidance on how the organization can align with data protection regulations and standards.
+
+ https://learn.microsoft.com/en-us/training/modules/explore-plan-compliance-microsoft-365/4-manage-compliance-requirements-compliance-manager
+ 
+
 
